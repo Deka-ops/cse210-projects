@@ -1,0 +1,35 @@
+What is Version Control?
+Version control is a system that records changes to files over time, 
+allowing developers to track, manage, and revert to previous versions 
+of their code. It ensures that every modification made to a project is 
+stored and can be retrieved or reviewed when necessary. Version control 
+is essential for collaborative software development because it helps 
+coordinate work among multiple people, ensures consistency, and prevents 
+code conflicts or data loss.
+
+Benefit of Version Control
+One major benefit of version control is collaboration. 
+Multiple developers can work on the same project simultaneously 
+without overwriting each other’s work.
+
+Example of Version Control in Use
+In a software development team, version control is often used through Git. 
+Suppose a team is building a web application. Each developer creates a branch 
+to work on a specific feature, such as login functionality or user profile management. 
+After making changes and testing locally, they commit their changes and push them to a 
+remote repository like GitHub. A team lead or reviewer then initiates a pull request to 
+merge the feature branch into the main branch, ensuring that the code is reviewed, tested, 
+and approved before integration.
+
+Show a command used in Version Control (for example a Git command)
+
+git status:  shows the status of changes as untracked, modified, or staged.
+
+
+Thoroughly explain these concepts:
+
+In other words, Version control uses git as a system that records changes in files over time.
+It helps coordinate works among a team of people working together on a particular project, as 
+it ensures that there is no loss of data and prevents code conflict.
+It is very good for collaboration because it gives each developer the opportunity to work on a 
+specific feature. 
