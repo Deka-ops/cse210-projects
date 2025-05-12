@@ -4,60 +4,56 @@ class Program
 {
     static void Main(string[] args)
     {
-        // For Parts 1 and 2, where the user specified the number, ...
-        // console.Write("What is the magic number?" );
-        // int magicNumber = int.Parse(console.ReadLine());
-
         string playAgain = "yes";
 
         while (playAgain.ToLower() == "yes")
         {
-
-            // For Part 3, where we use a random number
+            // Generate a new magic number each round
             Random randomGenerator = new Random();
             int magicNumber = randomGenerator.Next(1, 101);
 
             int guess = -1;
             int guessCount = 0;
 
-            // We could also use a do-while loop here...
+            Console.WriteLine("I'm thinking of a number between 1 and 100...");
+
+            // Main guessing loop
             while (guess != magicNumber)
             {
-                Console.WriteLine("What is your guess? ");
-                string input = (Console.ReadLine());
+                Console.Write("What is your guess? ");
+                string input = Console.ReadLine();
 
                 if (int.TryParse(input, out guess))
                 {
                     guessCount++;
 
-                    if (magicNumber > guess)
+                    if (guess < magicNumber)
                     {
                         Console.WriteLine("Higher!");
                     }
-                    else if (magicNumber < guess)
+                    else if (guess > magicNumber)
                     {
                         Console.WriteLine("Lower!");
                     }
                     else
                     {
-                        Console.WriteLine($"You guessed it in {guessCount} guess!");
+                        // Correct guess—pluralize “guess” appropriately
+                        string plural = guessCount == 1 ? "guess" : "guesses";
+                        Console.WriteLine($"You guessed it in {guessCount} {plural}!");
                     }
                 }
                 else
                 {
                     Console.WriteLine("Please enter a valid number.");
                 }
-                    }
-
-                    // Ask the user if they want to play again
-                    Console.Write("Do you want to play again? (yes/no): ");
-                    playAgain = Console.ReadLine();
-                    Console.WriteLine(); // Add space before the next game starts
-                }
-
-                Console.WriteLine("Thanks for playing! Goodbye!");
             }
-        }
-    }
 
+            // Ask to play again
+            Console.Write("Do you want to play again? (yes/no): ");
+            playAgain = Console.ReadLine().Trim();
+            Console.WriteLine();
+        }
+
+        Console.WriteLine("Thanks for playing! Goodbye!");
+    }
 }
