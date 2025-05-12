@@ -15,8 +15,6 @@ class Program
             int guess = -1;
             int guessCount = 0;
 
-            Console.WriteLine("I'm thinking of a number between 1 and 100...");
-
             // Main guessing loop
             while (guess != magicNumber)
             {
