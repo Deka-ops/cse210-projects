@@ -1,10 +1,27 @@
 What is abstraction and why is it important?
 
-Abstraction is the process of turning complex ideas into simpler ones
+Abstraction is the process of turning complex ideas into simpler ones.  
+It allows developers to work with complex systems more easily by focusing on 
+what something does rather than how it does it.
 
 The benefit of Abstraction
 
+It makes the program easier to maintain and scale.
+
 An application of Abstraction
+
+// This abstracts away how an entry is added
+journal.AddEntry(newEntry);
+
+// This abstracts how the journal is saved to a file
+journal.SaveToFile("myJournal.txt");
+
 
 Use a code example of Abstraction from the program you wrote
 (You copy a few codes that you wrote that demonstrates the use of the principle)
+
+In my journal program, abstraction is demonstrated in the way the Program class interacts 
+with the Journal class. For example, when I call methods like journal.AddEntry(newEntry), 
+journal.Display(), journal.SaveToFile("journal.txt"), or journal.LoadFromFile("journal.txt"), 
+I do not need to know how the entries are stored, displayed, or how the file system is accessed. 
+All of those details are handled inside the Journal class. This makes the program easier to maintain and modify.
