@@ -1,0 +1,10 @@
+What is abstraction and why is it important?
+
+Abstraction is the process of turning complex ideas into simpler ones
+
+The benefit of Abstraction
+
+An application of Abstraction
+
+Use a code example of Abstraction from the program you wrote
+(You copy a few codes that you wrote that demonstrates the use of the principle)
