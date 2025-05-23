@@ -1,0 +1,21 @@
+Explain the meaning of Encapsulation.
+Encapsulation is just like putting some important documents inside a secure box or suitcase, 
+allowing those with the pass key or code access to it. Here in c#, with encapsulation, you 
+keep your codes privates but you control how others gain access to it.
+
+Highlight a benefit of Encapsulation.
+Encapsulation Protects ones date. It makes the code easier to be read and understood and easier to be maintained.
+
+Provide an application of Encapsulation.
+Aside the scripture memorization that uses encapsulation to hide words, we equally have the mobile app log in that 
+hides and stored the password safely using only the loggin method to check the passcode.
+
+Use a code example of Encapsulation from the program you wrote. (You should copy and paste a few lines of code that demonstrate the use of the principle.)
+
+public class Word
+{
+    private string _text;
+    private bool _isHidden;
+}
+
+it hides internal data as such other classes can’t see or change _text or _isHidden directly.
