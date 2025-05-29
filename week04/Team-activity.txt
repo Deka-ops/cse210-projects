@@ -1,0 +1,100 @@
+Foundation Program Designs
+Foundation Program #1: Abstraction with YouTube Videos
+What does the program do?
+It stores and displays information about YouTube videos and comments. 
+The goal is to model how comments relate to videos, simulating a backend structure for comment tracking.
+
+Classes and Responsibilities
+
+Class: Video
+
+Attributes:
+title: string
+author: string
+lengthInSeconds: int
+comments: List<Comment>
+
+Methods:
+AddComment(Comment comment)
+GetNumberOfComments(): int
+DisplayVideoDetails()
+Class: Comment
+Attributes:
+commenterName: string
+text: string
+Methods:
+None (serves as a simple data class)
+
+Program Flow
+Create 3–4 Video objects.
+Add 3–4 comments to each video.
+Store videos in a list.
+Loop through the list:
+Display video details.
+List each comment.
+
+Foundation Program #2: Encapsulation with Online Ordering
+
+What does the program do?
+
+It simulates a customer order system. Products are ordered by 
+customers and shipped based on the country in their address.
+
+Classes and Responsibilities
+
+Class: Order
+
+Attributes:
+
+products: List<Product>
+
+customer: Customer
+
+Methods:
+CalculateTotalPrice(): double
+GetPackingLabel(): string
+GetShippingLabel(): string
+
+Class: Product
+
+Attributes:
+name: string
+productId: string
+price: double
+quantity: int
+
+Methods:
+GetTotalCost(): double
+Class: Customer
+
+Attributes:
+name: string
+address: Address
+Methods:
+LivesInUSA(): bool
+Class: Address
+Attributes:
+street: string
+city: string
+stateOrProvince: string
+country: string
+Methods:
+IsInUSA(): bool
+GetFullAddress(): string
+
+Program Flow
+Create at least two Order objects.
+Each order contains 2–3 Product objects.
+Each order has a Customer with an Address in Nigeria.
+
+For each order:
+Display packing label.
+Display shipping label.
+Display total price.
+
+In summary, Program #1 demonstrates abstraction by hiding comment handling inside the Video class.
+
+Program #2 shows encapsulation by keeping each class responsible for its own data and logic.
+
+Both programs reinforce good OOP design principles.
+
