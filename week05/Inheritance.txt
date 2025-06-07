@@ -1,0 +1,64 @@
+Explain the meaning of Inheritance.
+
+Imagine you have a toy box, and inside it, there is a special toy robot called "Activity Robot". This robot knows how to start, pause, and end an activity.
+
+Now, you want to make 3 new robots:
+
+A Breathing Robot that helps you breathe,
+
+A Reflection Robot that asks you questions,
+
+A Listing Robot  that lets you make lists.
+
+Instead of building each robot from scratch, you say:
+
+"Hey! Let me copy the smart parts from the Activity Robot, so all the new robots know how to start and end an activity too!"
+
+That’s called inheritance! The new robots inherit the smart parts from the first robot.
+
+Highlight a benefit of Inheritance.
+It saves time! 
+Because you don’t have to write the same thing over and over again. You just write it once in the main robot (base class), and the others inherit it.
+
+Provide an application of Inheritance.
+
+Imagine a teacher who teaches students how to start a lesson, take a break, and end the class. She gives all her students a special notebook 📓 that shows exactly how to do those three things.
+
+Now, she has three types of students:
+
+Breathing Student who teaches breathing exercises
+
+Reflection Student who guides deep thinking
+
+Listing Student  who helps make lists
+
+They all follow the same notebook given by the teacher, so:
+
+They all know how to begin a session
+
+They all know how to pause and take a break
+
+And they all know how to end properly
+
+But each student adds their own unique lesson content — one does breathing, one does reflection, and one does listing.
+
+ That’s Inheritance:
+The teacher’s notebook is like a base class called Activity, and the students are subclasses (BreathingActivity, ReflectionActivity, ListingActivity).
+They inherit the shared instructions (start, pause, end), and each adds their own special thing!
+
+Use a code example of Inheritance from the program you wrote. (You should copy and paste a few lines of code that demonstrate the use of the principle.)
+public class BreathingActivity : Activity
+{
+    public BreathingActivity() : base(
+        "Breathing Activity",
+        "This activity will help you relax by guiding you through deep breathing.")
+    {
+    }
+
+    public override void Run()
+    {
+        Start(); // Comes from Activity!
+        // breathing logic here
+        End();   // Comes from Activity!
+    }
+}
