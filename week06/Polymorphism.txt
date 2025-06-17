@@ -1,0 +1,43 @@
+1. Explain the meaning of Polymorphism.
+
+Let’s say you have a toy that can talk.
+Now imagine you have three toys:
+
+A teddy bear that says “I love you!”
+A robot that says “Beep boop!”
+A doll that says “Let’s play!”
+
+Even though they all have a “talk” button, when you press it, each toy says something different.
+That’s what polymorphism means in computers:
+“Different things can use the same command, but do their own special action.”
+
+2. Highlight a benefit of Polymorphism.
+
+It’s like having one remote that works on many toys. You don’t need different remotes—just 
+press the same button and let the toy do what it knows best.
+
+3. Provide an application of Polymorphism.
+
+In my Eternal Quest game, you have 3 types of goals:
+
+A Simple Goal (like cleaning your room)
+
+An Eternal Goal (like being kind every day)
+
+A Checklist Goal (like watering the plants 5 times)
+
+Even though they are different, you can tell them all:
+goal.RecordEvent() (which means “Mark it as done!”)
+
+Each one will do it in its own way, but you use the same command for all. That’s polymorphism!
+
+4. Use a code example of Polymorphism from the program you wrote. 
+(You should copy and paste a few lines of code that demonstrate the use of the principle.)
+
+foreach (Goal goal in _goals)
+{
+    goal.RecordEvent();
+}
+
+
+
