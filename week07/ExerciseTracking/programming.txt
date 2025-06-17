@@ -1,0 +1,63 @@
+1. Abstraction
+Definition:
+Abstraction means focusing on the essential features of an object while hiding the complex 
+implementation details. It helps to simplify interactions by exposing only what is necessary.
+
+How I used it:
+In my Fitness Tracker app, I created an abstract base class called Activity with abstract 
+methods like GetDistance(), GetSpeed(), and GetPace(). The specific activities (Running, Cycling, 
+Swimming) implemented these methods with their own calculations.
+
+How it helped:
+By abstracting the shared functionality in a common base class, I made it easy to add new types of 
+exercises in the future—like rowing or hiking—without changing the rest of the system. This made the 
+program scalable and easier to maintain.
+
+2. Encapsulation
+Definition:
+Encapsulation is the practice of keeping an object’s internal state private, exposing only necessary 
+methods to the outside world. This protects the data and enforces a clear interface.
+
+How I used it:
+In both Eternal Quest and Fitness Tracker, I made class fields private (like _minutes, _laps, or _points) 
+and used public properties or methods to access or modify them. This ensured that internal values were only 
+modified in controlled ways.
+
+How it helped:
+Encapsulation helped protect the integrity of my data. For example, if I later needed to validate input 
+(e.g., ensure minutes aren’t negative), I could do it in one place without breaking other parts of the program. 
+This made the program more robust and easier to update.
+
+3. Inheritance
+Definition:
+Inheritance allows a class to reuse code from another class, creating a parent-child relationship. This promotes 
+code reuse and hierarchical structuring.
+
+How I used it:
+In the Fitness Tracker, I used inheritance by creating a base Activity class and derived classes like Running, 
+Cycling, and Swimming. These child classes reused the shared properties and behaviors from the base class.
+
+How it helped:
+It saved time by avoiding code duplication and made updates easier. For example, if I wanted to add a new field 
+to all activities (like calories burned), I could do it once in the base class and have it automatically available 
+in all derived classes.
+
+4. Polymorphism
+Definition:
+Polymorphism allows objects of different classes to be treated through a common interface, enabling flexibility 
+in how methods are called at runtime.
+
+How I used it:
+In the Fitness Tracker, I stored different activity types in a single list of Activity objects. Then I used 
+polymorphism to call the same GetSummary() method on each object, knowing that each type would execute its own 
+specific version.
+
+How it helped:
+This made my code cleaner and more adaptable. I didn’t need to write separate logic for each activity type. If 
+I added a new activity, I wouldn’t need to change the iteration logic—just the new class. This approach makes 
+future expansion much easier.
+
+In summary,
+By applying abstraction, encapsulation, inheritance, and polymorphism, I was able to design programs that are 
+modular, scalable, and maintainable. These principles allowed me to manage complexity, reduce repetition, and 
+prepare for future enhancements—skills that I’m excited to bring to any software development role.
